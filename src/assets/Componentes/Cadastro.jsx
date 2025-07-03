@@ -23,7 +23,7 @@ function Cadastro() {
                         <button type="submit">Entrar</button>
 
                         <p className="login-msg">
-                            Já tem uma conta? <a href="/login">Login</a>
+                            Já tem uma conta? <li><Link to="/Login">Login</Link></li>
                         </p>
                     </form>
                 </div>
