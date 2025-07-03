@@ -1,4 +1,4 @@
-import './login.css';
+import './Login.css';
 import Casa from '../img/casa.png'
 import { Link } from 'react-router-dom';
 
