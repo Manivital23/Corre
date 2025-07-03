@@ -20,7 +20,7 @@ function Login() {
                         <button type="submit">Entrar</button>
 
                         <p className="cadastro-msg">
-                            Não tem uma conta? <a href="/cadastro">Cadastre-se</a>
+                            Não tem uma conta? <li><Link to="/cadastro">Cadastre-se</Link></li>
                         </p>
                     </form>
                 </div>
