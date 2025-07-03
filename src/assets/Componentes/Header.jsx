@@ -10,7 +10,7 @@ function Header() {
       </div>
       <nav>
         <ul>
-          <li><Link to="/Inicio">Início</Link></li>
+          <li><Link to="/">Início</Link></li>
 
           <li className="dropdown">
             <a className="borda" href="#">Casas</a>
