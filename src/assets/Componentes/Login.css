@@ -1,0 +1,159 @@
+.login {
+    width: 100%;
+    height: 550px;
+    background-color: #FF7517;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagem {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.LogoPai {
+    width: 100px;
+    height: 100px;
+}
+
+.quadrado {
+    width: 30%;
+    height: 400px;
+    background-color: #000;
+    border-radius: 30px;
+    margin-right: 40px;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    padding: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.formulario label {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.formulario input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.formulario button {
+    width: 40%;
+    padding: 10px;
+    background-color: #FF7517;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.formulario button:hover {
+    background-color: #e06614;
+}
+
+.cadastro-msg {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.cadastro-msg a {
+    color: #FF7517;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.cadastro-msg a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*******************************************TABLET************************************/
+
+@media (max-width: 1024px) {
+    .imagem {
+        width: 40%;
+        height: auto;
+    }
+
+    .quadrado {
+        width: 55%;
+        margin: 0;
+    }
+
+    .login {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+/************************************CELULAR**************************************/
+
+@media (max-width: 600px) {
+    .imagem {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .quadrado {
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .formulario {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .formulario input,
+    .formulario button {
+        font-size: 14px;
+    }
+
+    .formulario button {
+        width: 100%;
+    }
+
+    .login {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+}

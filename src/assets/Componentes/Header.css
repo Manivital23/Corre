@@ -1,0 +1,179 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  font: normal 12pt Arial;
+}
+
+.LogoPai {
+  width: 100px;
+  height: 100px;
+}
+
+header ul {
+  display: flex;
+  width: 700px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+li {
+  font-weight: 500;
+  font-size: 14pt;
+  list-style: none;
+}
+
+nav > ul > li > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  padding: 25px;
+}
+
+nav > ul > li > a::after {
+  content: '';
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  width: 0%;
+  height: 2px;
+  background-color: #FF7517;
+  transition: width 0.3s ease-in-out;
+}
+
+nav > ul > li > a:hover::after {
+  width: calc(100% - 50px);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  background-color: #FF7517;
+  margin-top: 25px;
+  display: none;
+  list-style: none;
+  padding: 0;
+  width: 180px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 13pt;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+
+/***************************************** Tablets **************************/
+
+@media (max-width: 1024px) {
+  header {
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .LogoPai {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  header ul {
+    width: 100%;
+    max-width: 720px;
+    padding: 0;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  li {
+    font-size: 13pt;
+    padding: 0 10px;
+    flex: 1 1 auto;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  nav > ul > li > a,
+  .botao {
+    padding: 15px 10px;
+    font-size: 13pt;
+  }
+
+  nav > ul > li > a::after,
+  .botao::after {
+    content: none;
+  }
+
+  .dropdown-menu {
+    margin-left: 0;
+    margin-top: 5px;
+    position: absolute;
+  }
+}
+
+/*************************************** Celular *****************************************/
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: white;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: relative;
+    margin: 0;
+    background: #FF7517;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu a {
+    padding: 15px;
+  }
+}

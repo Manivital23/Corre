@@ -1,0 +1,56 @@
+.politica-de-privacidade {
+  background-color: #FF7517;
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.politica-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #000000;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.politica-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #FF7517;
+}
+
+.politica-container h2 {
+    margin-top: 1.5rem;
+    color: #FF7517;
+    letter-spacing: 1px;
+
+}
+
+.politica-container p {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+
+}
+
+.politica-container ul {
+    margin-top: 0.8rem;
+    margin-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.politica-container a {
+    color: #FF7517;
+    text-decoration: none;
+}
+
+.politica-container strong {
+    font-weight: 500;
+    color: #FF7517;
+}
+
+.politica-container a:hover {
+    text-decoration: underline;
+}

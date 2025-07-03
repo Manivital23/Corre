@@ -1,0 +1,106 @@
+/* Fundo da página */
+.fundo {
+  background-color: #FF7517;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Container branco com sombra */
+.quadradinho {
+  background-color: #000000;
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(255, 117, 23, 0.4);
+  color: #fff;
+}
+
+/* Título principal */
+.formula {
+  text-align: center;
+  font-size: 2rem;
+  color: #FF7517;
+  margin-bottom: 1.5rem;
+}
+
+/* Títulos de seção */
+.form h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #FF7517;
+  padding-bottom: 0.3rem;
+}
+
+/* Formulário geral */
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Labels e inputs */
+.form label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="tel"],
+.form input[type="number"],
+.form input[type="date"],
+.form input[type="name"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Checkbox e radio alinhados */
+.form input[type="checkbox"],
+.form input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #FF7517;
+}
+
+/* Botão de envio */
+.form button {
+  margin-top: 2rem;
+  padding: 0.75rem;
+  background-color: #FF7517;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #e56713;
+}
+
+.form a {
+  color: #FF7517;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}

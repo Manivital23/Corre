@@ -1,0 +1,157 @@
+.preto {
+    width: 100%;
+    height: 550px;
+    background-color: #FF7517;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagem {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.LogoPai {
+    width: 100px;
+    height: 100px;
+}
+
+.quadrado {
+    width: 30%;
+    background-color: #000;
+    border-radius: 30px;
+    margin-right: 40px;
+}
+
+.cada {
+    font-size: 20px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    padding-top: 0px;
+}
+
+.formu {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.formu label {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.formu input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.formu button {
+    width: 40%;
+    padding: 5px;
+    background-color: #FF7517;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.formu button:hover {
+    background-color: #e06614;
+}
+
+.login-msg {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.login-msg a {
+    color: #FF7517;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.login-msg a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/*******************************TABLET*******************************/
+
+@media (max-width: 1024px) {
+    .preto {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .imagem {
+        width: 50%;
+        height: auto;
+    }
+
+    .quadrado {
+        width: 70%;
+        margin: 0;
+    }
+}
+
+/**********************************CELULAR*********************************/
+
+@media (max-width: 600px) {
+    .preto {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .imagem {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .quadrado {
+        width: 90%;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .formu {
+        padding: 0 20px;
+    }
+
+    .cada {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+
+    .formu input,
+    .formu button {
+        font-size: 14px;
+    }
+
+    .formu button {
+        width: 100%;
+    }
+}
